@@ -14,10 +14,12 @@ templates = Jinja2Templates(directory="templates")
 jinja_env = templates.env
 
 
+@app.get("/")
 def hello(request: Request):
     # return {'Hello': 'World'}
     return templates.TemplateResponse('hello.html',
                                     {'request': request})
-def hello_tut():
+@app.get("/hello_tut")
+def hello_tut(request: Request):
     return templates.TemplateResponse('tut.html',
                                     {'request': request})
