@@ -1,6 +1,8 @@
+from urllib import request
 from fastapi import FastAPI
 from starlette.templating import Jinja2Templates
-# from jinja2 import Template
+from fastapi.responses import HTMLResponse
+from fastapi import APIRouter
 from starlette.requests import Request
 
 app = FastAPI(
@@ -12,7 +14,11 @@ app = FastAPI(
 templates = Jinja2Templates(directory="templates")
 jinja_env = templates.env
 
-def index(request: Request):
+
+def hello(request: Request):
     # return {'Hello': 'World'}
-    return templates.TemplateResponse('index.html',
+    return templates.TemplateResponse('hello.html',
+                                    {'request': request})
+def hello_tut():
+    return templates.TemplateResponse('tut.html',
                                     {'request': request})
