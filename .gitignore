@@ -122,6 +122,8 @@ venv.bak/
 # Test File
 .test
 
+# directory
+docfile
 # mypy
 .mypy_cache/
 .dmypy.json
