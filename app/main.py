@@ -5,8 +5,8 @@ from fastapi.responses import HTMLResponse
 from starlette.requests import Request
 
 app = FastAPI(
-    title="let's make toDo Application for FastAPI",
-    description="Fastapiチュートリアル:シンプルなtodoアプリケーションを作りましょう",
+    title="FastAPI tutorial",
+    description="FastAPIを学ぼう！！！",
     version='0.9 beta'
 )
 
