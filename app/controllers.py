@@ -1,8 +1,7 @@
 from urllib import request
 from fastapi import FastAPI
-from starlette.templating import Jinja2Templates
+from fastapi.templating import Jinja2Templates
 from fastapi.responses import HTMLResponse
-from fastapi import APIRouter
 from starlette.requests import Request
 
 app = FastAPI(
