@@ -17,3 +17,17 @@ pip install -r requirements.txt
 ```
 uvicorn main:app --reload
 ```
+
+## Docker
+- docker image作成
+```
+docker build -t $myimagename .
+```
+- コンテナ起動
+```
+docker run -d --name $mycontainername -p 80:80 $myimagename
+```
+- curlで確認
+```
+curl localhost:80
+```
