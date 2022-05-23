@@ -11,7 +11,7 @@ source .venv/bin/activate
 ```
 - fastapi, uvicorn, Jinja2をインストール
 ```
-pip install fastapi, uvicorn, jinja2
+pip install -r requirements.txt
 ```
 - アプリケーション起動
 ```
