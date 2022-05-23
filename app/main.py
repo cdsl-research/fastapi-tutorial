@@ -8,7 +8,7 @@ app = FastAPI(
     version='0.9 beta'
 )
 
-templates = Jinja2Templates(directory="./templates")
+templates = Jinja2Templates(directory="./app/templates")
 jinja_env = templates.env
 
 
