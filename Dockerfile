@@ -6,7 +6,7 @@ COPY ./requirements.txt /code/
 
 RUN pip install -r requirements.txt
 
-EXPOSE 80
+#EXPOSE 80
 
 COPY ./app /code/app
 
