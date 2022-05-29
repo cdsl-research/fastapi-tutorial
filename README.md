@@ -15,7 +15,7 @@ pip install -r requirements.txt
 ```
 - アプリケーション起動
 ```
-uvicorn main:app --reload
+uvicorn app.main:app --reload
 ```
 
 ## Docker
