@@ -34,7 +34,7 @@ curl localhost:80
 
 - イメージ名の変更
 ```
-docker tag $myimagename $DockerHubname/$myimagename:tag
+docker tag $myimagename $hub-user/$myimagename:tag
 ```
 
 - imageをDocker HubにPush 
