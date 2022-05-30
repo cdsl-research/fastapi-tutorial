@@ -31,3 +31,16 @@ docker run -d --name $mycontainername -p 80:80 $myimagename
 ```
 curl localhost:80
 ```
+
+- イメージ名の変更
+```
+docker tag $myimagename $DockerHubname/$myimagename:tag
+```
+
+- imageをDocker HubにPush 
+
+```
+docker push $DockerHubname/$myimagename:tag 
+```
+
+
