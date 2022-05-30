@@ -42,5 +42,9 @@ docker tag $myimagename $hub-user/$myimagename:tag
 ```
 docker push $DockerHubname/$myimagename:tag 
 ```
+- 起動中のコンテナをイメージ化
+```
+docker container commit $container-id or $container-name $hub-name/$myimagename:tag
+```
 
 
